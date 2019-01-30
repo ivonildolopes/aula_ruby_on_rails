@@ -1,6 +1,10 @@
-<h1>Editing Contact</h1>
+<h1>Editar Contato</h1>
 
-<%= render 'form', contact: @contact %>
 
-<%= link_to 'Show', @contact %> |
-<%= link_to 'Back', contacts_path %>
+<%= form_for @contact do |form| %>
+    <%= render 'form', form: form %>
+    <%= form.submit 'Editar', class: 'btn btn-info' %>
+    
+    <%= link_to 'Back', contacts_path, class:'btn btn-warning' %>
+<% end %>
+    
