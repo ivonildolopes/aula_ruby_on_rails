@@ -25,7 +25,7 @@
 
                 <% if !user_signed_in? %>
                     <li>
-                        <%= link_to 'Entrar', login_path %>
+                        <%= link_to 'SingIn', login_path %>
                     </li>
                 <% else %>
                     <li class="dropdown">
@@ -35,17 +35,17 @@
 
                        <ul class="dropdown-menu">
                             <li>
-                                <%= link_to 'Minha Pagina', contacts_path %>
+                                <%= link_to 'My contacts', contacts_path %>
                             </li>
                             <li>
-                                <%= link_to 'Editar', edit_user_path(current_user) %>
+                                <%= link_to 'Edit my account', edit_user_path(current_user) %>
                             </li>
                             <li>
-                                 <%= link_to 'Cadastrar Contatos', new_contact_path %>
+                                 <%= link_to 'Register Contact', new_contact_path %>
                              </li>
                             <li class="divider" role="separator"></li>
                             <li>
-                                <%= link_to 'Sair', sair_path, method: :delete %>
+                                <%= link_to 'SingOut', sair_path, method: :delete %>
                             </li>
                       </ul>
 

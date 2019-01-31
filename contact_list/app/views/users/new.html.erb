@@ -29,6 +29,14 @@
             <%= f.password_field :password_confirmation, class: 'form-control' %>
         </div>
 
+        <!--  
+        # <div class="form-group">
+        #     <%= f.label :usuario %>
+        #     <%= f.select :name, @users.collect { |user| [user.name, user.id] }, class:'form-control' %>
+        #  </div>
+        -->
+
+
         <%= f.submit 'Cadastrar', class:'btn btn-primary' %>
         <% end %>
     
